@@ -8,15 +8,18 @@ namespace VariablesExercise
         {
             Console.WriteLine("Hello, World!");
 
-            string stringVariable;
-            int intVariable;
-            char charVariable;
-            bool boolVariable;
-            double doubleVariable;
-            decimal decimalVariable;
+            string stringVariable = "";
+            int intVariable = 0;
+            char charVariable = 'C';
+            bool boolVariable = true;
+            double doubleVariable = 32.2;
+            decimal decimalVariable = 9.81m;
 
-            Console.Write("What is your pet's name: ");
-            stringVariable = Console.ReadLine();
+            do
+            {
+                Console.Write("What is your pet's name: ");
+                stringVariable = Console.ReadLine();
+            } while (String.IsNullOrEmpty(stringVariable));
 
             Console.Write("How old is your pet: ");
             intVariable = Convert.ToInt32(Console.ReadLine());
